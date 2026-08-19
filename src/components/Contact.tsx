@@ -16,11 +16,37 @@ export default function Contact() {
   const [selectedSlot, setSelectedSlot] = useState('');
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // In Phase 2 this will POST to /api/contact
-    setStatus('success');
-    setTimeout(() => setStatus('idle'), 5000);
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.get('name'),
+          phone: formData.get('phone'),
+          email: formData.get('email'),
+          date: formData.get('preferred_date') || null,
+          timeSlot: selectedSlot || null,
+          serviceType: formData.get('service_type') || null,
+          message: formData.get('message') || null,
+        }),
+      });
+
+      if (res.ok) {
+        setStatus('success');
+        form.reset();
+        setSelectedSlot('');
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (

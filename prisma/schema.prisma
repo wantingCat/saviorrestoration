@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Admin {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now())
+}
+
+model SiteSettings {
+  id           String   @id @default("main")
+  phone        String   @default("(437) 555-1234")
+  email        String   @default("info@saviorrestoration.com")
+  address      String   @default("Greater Toronto Area, Ontario")
+  businessName String   @default("Savior Restoration")
+  tagline      String   @default("When disaster strikes. We're already on the way.")
+  updatedAt    DateTime @updatedAt
+}
+
+model GalleryImage {
+  id        String   @id @default(cuid())
+  url       String
+  caption   String?
+  category  String?
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+}
+
+model ContactSubmission {
+  id          String   @id @default(cuid())
+  name        String
+  phone       String
+  email       String
+  date        String?
+  timeSlot    String?
+  serviceType String?
+  message     String?
+  status      String   @default("new")
+  createdAt   DateTime @default(now())
+}
