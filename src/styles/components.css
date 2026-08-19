@@ -14,7 +14,7 @@
 }
 
 .header.scrolled {
-  background: rgba(10, 10, 15, 0.92);
+  background: rgba(10, 14, 26, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 1px 0 var(--border-subtle);
@@ -89,7 +89,7 @@
   gap: 8px;
   padding: 10px 20px;
   background: var(--emergency);
-  color: #0a0a0f;
+  color: #ffffff;
   border-radius: var(--radius-md);
   font-weight: 600;
   font-size: 0.88rem;
@@ -99,7 +99,7 @@
 
 .call-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 40px rgba(245, 158, 11, 0.35);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.35);
 }
 
 /* Mobile Menu */
@@ -136,7 +136,7 @@
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: rgba(10, 10, 15, 0.97);
+  background: rgba(10, 14, 26, 0.97);
   backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
@@ -206,7 +206,7 @@
 .hero-blob.b1 {
   width: 500px;
   height: 500px;
-  background: var(--accent-start);
+  background: #1e3a6e;
   top: -10%;
   right: -5%;
   animation-delay: 0s;
@@ -215,7 +215,7 @@
 .hero-blob.b2 {
   width: 400px;
   height: 400px;
-  background: var(--accent-end);
+  background: #2a4a8a;
   bottom: -15%;
   left: -10%;
   animation-delay: -4s;
@@ -541,7 +541,7 @@
 .gallery-thumb .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10,10,15,0.8), transparent);
+  background: linear-gradient(to top, rgba(10,14,26,0.8), transparent);
   display: flex;
   align-items: flex-end;
   padding: 16px;
@@ -935,7 +935,7 @@
 .slot-btn.active {
   border-color: var(--accent-start);
   color: var(--accent-start);
-  background: rgba(0, 212, 170, 0.08);
+  background: rgba(148, 184, 255, 0.08);
 }
 
 .form-note {
@@ -954,9 +954,9 @@
 
 .form-status.success {
   display: block;
-  background: rgba(0, 212, 170, 0.1);
+  background: rgba(148, 184, 255, 0.1);
   color: var(--accent-start);
-  border: 1px solid rgba(0, 212, 170, 0.2);
+  border: 1px solid rgba(148, 184, 255, 0.2);
 }
 
 .form-status.error {

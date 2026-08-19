@@ -53,7 +53,7 @@ export default function About() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  background: 'linear-gradient(135deg, #111118, #16161f)',
+                  background: 'linear-gradient(135deg, #0f1525, #141c30)',
                   color: 'var(--text-muted)',
                   fontSize: '0.9rem',
                   fontFamily: 'var(--font-mono)',

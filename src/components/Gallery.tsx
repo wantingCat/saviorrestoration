@@ -14,7 +14,7 @@ const GALLERY_ITEMS = [
 
 const CATEGORY_COLORS: Record<string, string> = {
   water: '#0ea5e9',
-  fire: '#f59e0b',
+  fire: '#3b82f6',
   mould: '#00d4aa',
   storm: '#8b5cf6',
 };
@@ -68,7 +68,7 @@ export default function Gallery() {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      background: `linear-gradient(135deg, ${CATEGORY_COLORS[item.category]}15, #111118)`,
+                      background: `linear-gradient(135deg, ${CATEGORY_COLORS[item.category]}15, #0f1525)`,
                       color: 'var(--text-muted)',
                       fontSize: '0.8rem',
                       fontFamily: 'var(--font-mono)',
@@ -110,7 +110,7 @@ export default function Gallery() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              background: `linear-gradient(135deg, ${CATEGORY_COLORS[GALLERY_ITEMS[activeIndex]?.category || 'water']}20, #111118)`,
+              background: `linear-gradient(135deg, ${CATEGORY_COLORS[GALLERY_ITEMS[activeIndex]?.category || 'water']}20, #0f1525)`,
               border: '1px solid var(--border-subtle)',
               color: 'var(--text-muted)',
               fontFamily: 'var(--font-mono)',

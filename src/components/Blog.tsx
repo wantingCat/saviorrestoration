@@ -50,7 +50,7 @@ export default function Blog() {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      background: 'linear-gradient(135deg, #16161f, #111118)',
+                      background: 'linear-gradient(135deg, #141c30, #0f1525)',
                       color: 'var(--text-muted)',
                       fontFamily: 'var(--font-mono)',
                       fontSize: '0.75rem',

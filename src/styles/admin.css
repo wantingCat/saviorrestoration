@@ -40,7 +40,7 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--accent-start);
-  background: rgba(0, 212, 170, 0.1);
+  background: rgba(148, 184, 255, 0.1);
   padding: 3px 8px;
   border-radius: 4px;
   display: inline-block;
@@ -70,7 +70,7 @@
 }
 
 .sidebar-nav a.active {
-  background: rgba(0, 212, 170, 0.08);
+  background: rgba(148, 184, 255, 0.08);
   color: var(--accent-start);
   font-weight: 500;
 }
@@ -217,7 +217,7 @@
 }
 
 .status-badge.new {
-  background: rgba(0, 212, 170, 0.12);
+  background: rgba(148, 184, 255, 0.12);
   color: var(--accent-start);
 }
 
@@ -245,7 +245,7 @@
 .gallery-upload-zone:hover,
 .gallery-upload-zone.dragging {
   border-color: var(--accent-start);
-  background: rgba(0, 212, 170, 0.04);
+  background: rgba(148, 184, 255, 0.04);
 }
 
 .gallery-upload-zone .upload-icon {
@@ -375,7 +375,7 @@
 
 .admin-btn-primary {
   background: var(--accent-gradient);
-  color: #0a0a0f;
+  color: #0a0e1a;
 }
 
 .admin-btn-primary:hover {

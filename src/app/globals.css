@@ -7,34 +7,34 @@
 
 /* ── Tokens ── */
 :root {
-  /* Backgrounds */
-  --bg-base: #0a0a0f;
-  --bg-paper: #111118;
-  --bg-paper-2: #16161f;
+  /* Backgrounds — deep navy */
+  --bg-base: #0a0e1a;
+  --bg-paper: #0f1525;
+  --bg-paper-2: #141c30;
   --bg-card: rgba(255, 255, 255, 0.04);
   --bg-card-hover: rgba(255, 255, 255, 0.07);
 
-  /* Accents */
-  --accent-start: #00d4aa;
-  --accent-end: #0ea5e9;
+  /* Accents — clean white + ice blue */
+  --accent-start: #ffffff;
+  --accent-end: #94b8ff;
   --accent-gradient: linear-gradient(135deg, var(--accent-start), var(--accent-end));
-  --emergency: #f59e0b;
-  --emergency-glow: rgba(245, 158, 11, 0.35);
+  --emergency: #3b82f6;
+  --emergency-glow: rgba(59, 130, 246, 0.35);
 
   /* Text */
-  --text-primary: #f0f0f5;
-  --text-secondary: #a0a0b8;
-  --text-muted: #6b6b80;
+  --text-primary: #f0f2f8;
+  --text-secondary: #8e9ab8;
+  --text-muted: #576380;
 
   /* Borders */
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.15);
-  --border-accent: rgba(0, 212, 170, 0.3);
+  --border-hover: rgba(255, 255, 255, 0.18);
+  --border-accent: rgba(148, 184, 255, 0.3);
 
   /* Shadows */
-  --glow-accent: 0 0 40px rgba(0, 212, 170, 0.15);
-  --glow-emergency: 0 0 30px rgba(245, 158, 11, 0.25);
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --glow-accent: 0 0 40px rgba(148, 184, 255, 0.12);
+  --glow-emergency: 0 0 30px rgba(59, 130, 246, 0.25);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
 
   /* Layout */
   --max-width: 1200px;
@@ -228,25 +228,25 @@ section {
 
 .btn-primary {
   background: var(--accent-gradient);
-  color: #0a0a0f;
+  color: #0a0e1a;
   box-shadow: var(--glow-accent);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 60px rgba(0, 212, 170, 0.25);
+  box-shadow: 0 0 60px rgba(148, 184, 255, 0.2);
 }
 
 .btn-emergency {
   background: var(--emergency);
-  color: #0a0a0f;
+  color: #ffffff;
   box-shadow: var(--glow-emergency);
   animation: pulseGlow 2s ease-in-out infinite;
 }
 
 .btn-emergency:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 50px rgba(245, 158, 11, 0.4);
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.4);
 }
 
 .btn-ghost {
@@ -261,8 +261,8 @@ section {
 }
 
 @keyframes pulseGlow {
-  0%, 100% { box-shadow: 0 0 20px rgba(245, 158, 11, 0.2); }
-  50% { box-shadow: 0 0 40px rgba(245, 158, 11, 0.4); }
+  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.4); }
 }
 
 /* ── Cards (Glassmorphism) ── */
@@ -340,7 +340,7 @@ section {
 .field textarea:focus,
 .field select:focus {
   border-color: var(--accent-start);
-  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.1);
+  box-shadow: 0 0 0 3px rgba(148, 184, 255, 0.1);
 }
 
 .field textarea {
@@ -363,7 +363,7 @@ section {
   width: 100%;
   padding: 16px 32px;
   background: var(--accent-gradient);
-  color: #0a0a0f;
+  color: #0a0e1a;
   font-family: var(--font-heading);
   font-weight: 600;
   font-size: 1rem;
